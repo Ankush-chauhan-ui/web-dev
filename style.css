@@ -708,3 +708,144 @@ img {
   font-size: 13px;
   color: #e2e8f0;
 }
+
+.contact-section {
+  background-color: #f7f9fb;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 35px;
+}
+
+.contact-details {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-details h3 {
+  font-size: 20px;
+  color: #0b3c5d;
+  margin-bottom: 10px;
+}
+
+.contact-details > p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 22px;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.contact-info-item i {
+  color: #0b3c5d;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.contact-info-item strong {
+  display: block;
+  font-size: 14px;
+  color: #0b3c5d;
+}
+
+.contact-info-item p {
+  font-size: 13px;
+  color: #555555;
+  margin: 0;
+}
+
+/* Form Area */
+.contact-form-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.team-placeholder-box {
+  background-color: #fef3c7;
+  border: 1px dashed #d97706;
+  color: #92400e;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.contact-form-box h3 {
+  font-size: 20px;
+  color: #0b3c5d;
+  margin-bottom: 6px;
+}
+
+.form-desc {
+  font-size: 13.5px;
+  color: #666666;
+  margin-bottom: 18px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 13.5px;
+  font-family: inherit;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0b3c5d;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-alert {
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.form-alert.success {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.form-alert.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}

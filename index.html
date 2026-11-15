@@ -412,6 +412,111 @@
 
     </div>
   </section>
+ 
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <div class="title-underline"></div>
+        <p>Get in touch for admission enquiries, campus visits, or general information</p>
+      </div>
+
+      <div class="contact-layout">
+
+       
+        <div class="contact-details">
+          <h3>Campus Office</h3>
+          <p>You can visit the college administrative office between 9:00 AM and 4:30 PM (Monday to Saturday).</p>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address:</strong>
+              <p>TechNova Institute Of Engineering, Plot No. 12, Knowledge Park III, Greater Noida, Uttar Pradesh - 201306</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Admission Helpline:</strong>
+              <p>+91 11 2345 6789 / +91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email:</strong>
+              <p>admissions@abcit.edu.in / registrar@abcit.edu.in</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Office Hours:</strong>
+              <p>Monday - Saturday: 9:00 AM - 4:30 PM (Sunday Closed)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          
+          <div class="team-placeholder-box">
+            <small><strong>Note for Group Members:</strong> This contact form is ready for PHP / Database connection.</small>
+          </div>
+
+          <h3>Admission Enquiry Form</h3>
+          <p class="form-desc">Fill this quick form and our admissions team will contact you.</p>
+
+          <form id="enquiryForm" action="submit.php" method="POST" onsubmit="handleFormSubmit(event)">
+            
+            <div class="form-group">
+              <label for="studentName">Student Name *</label>
+              <input type="text" id="studentName" name="name" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="studentEmail">Email Address *</label>
+              <input type="email" id="studentEmail" name="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="studentPhone">Mobile Number *</label>
+              <input type="tel" id="studentPhone" name="phone" placeholder="Enter 10-digit mobile number" required />
+            </div>
+
+            <div class="form-group">
+              <label for="courseSelect">Select Course *</label>
+              <select id="courseSelect" name="course" required>
+                <option value="">-- Choose Course --</option>
+                <option value="B.Tech Computer Science">B.Tech - Computer Science & Engineering</option>
+                <option value="B.Tech Information Tech">B.Tech - Information Technology</option>
+                <option value="B.Tech ECE">B.Tech - Electronics & Communication</option>
+                <option value="B.Tech Mechanical">B.Tech - Mechanical Engineering</option>
+                <option value="B.Tech Civil">B.Tech - Civil Engineering</option>
+                <option value="MBA">MBA (Master of Business Administration)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="studentMessage">Query / Message</label>
+              <textarea id="studentMessage" name="message" rows="3" placeholder="Enter your query (optional)"></textarea>
+            </div>
+
+            <div id="formAlert" class="form-alert" style="display:none;"></div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Submit Enquiry</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty | TechNova Institute Of Engineering</title>
+  
+  <!-- Font Awesome for clean icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Google Fonts: Open Sans & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="faculty.css" />
+</head>
+<body>
+
+  <!-- ================= TOP CONTACT BAR ================= -->
+  <div class="top-header">
+    <div class="container top-container">
+      <div class="top-left">
+        <div class="top-item"><i class="fa-solid fa-phone"></i> +91 11 2345 6789</div>
+        <div class="top-item"><i class="fa-solid fa-envelope"></i> info@abcit.edu.in</div>
+      </div>
+      <div class="top-right">
+        <div class="top-item"><i class="fa-solid fa-location-dot"></i> Knowledge Park III, Greater Noida</div>
+        <a href="index.html#contact" class="top-link">Admissions 2026-27</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER & BRANDING ================= -->
+  <header class="college-header">
+    <div class="container header-container">
+      <div class="college-branding">
+        <div class="college-logo">
+          <img src="logo.jpeg" alt="TechNova Logo" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-graduation-cap\'></i>'">
+        </div>
+        <div class="college-names">
+          <h1>TechNova Institute Of Engineering</h1>
+          <p>Approved by AICTE, New Delhi & Affiliated to State Technical University</p>
+          <div class="naac-tag">Accredited by NAAC with 'A' Grade</div>
+        </div>
+      </div>
+      <div class="header-cta">
+        <a href="index.html#contact" class="btn btn-apply">Apply Online</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <nav class="main-navbar" id="navbar">
+    <div class="container nav-container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i> Menu
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="faculty.html" class="active">Faculty</a></li>
+        <li><a href="index.html#facilities">Facilities</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= SIMPLE PAGE HEADER ================= -->
+  <section class="faculty-page-header">
+    <div class="container">
+      <h2>College Faculty Members</h2>
+      <p>Meet our experienced professors, lecturers, and instructors dedicated to student learning and academic excellence.</p>
+    </div>
+  </section>
+
+  <!-- ================= FACULTY MEMBERS LIST ================= -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Our Faculty Directory</h2>
+        <div class="title-underline"></div>
+        <p>List of teaching staff across all engineering and management departments</p>
+      </div>
+
+      <!-- Simple Faculty Grid (No JS needed) -->
+      <div class="faculty-grid">
+
+        <!-- 1. Principal -->
+        <div class="faculty-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Prof. (Dr.) S. K. Verma" class="faculty-avatar" />
+          <h3>Prof. (Dr.) S. K. Verma</h3>
+          <div class="faculty-dept">Principal & Director</div>
+          <div class="faculty-details">
+            <p><strong>Qualification:</strong> Ph.D. (IIT Roorkee)</p>
+            <p><strong>Specialization:</strong> Robotics & Automation</p>
+            <p><strong>Experience:</strong> 28+ Years</p>
+          </div>
+          <a href="mailto:principal@abcit.edu.in" class="faculty-email"><i class="fa-solid fa-envelope"></i> principal@abcit.edu.in</a>
+        </div>
+
+        <!-- 2. Dean Academics -->
+        <div class="faculty-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Prof. (Dr.) Rajiv Malhotra" class="faculty-avatar" />
+          <h3>Prof. (Dr.) Rajiv Malhotra</h3>
+          <div class="faculty-dept">Dean of Academics</div>
+          <div class="faculty-details">
+            <p><strong>Qualification:</strong> Ph.D. (IIT Delhi)</p>
+            <p><strong>Specialization:</strong> High-Performance Computing</p>
+            <p><strong>Experience:</strong> 22+ Years</p>
+          </div>
+          <a href="mailto:dean.academics@abcit.edu.in" class="faculty-email"><i class="fa-solid fa-envelope"></i> dean.academics@abcit.edu.in</a>
+        </div>
+
+        <!-- 3. CSE HOD -->
+        <div class="faculty-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr. Ananya Sharma" class="faculty-avatar" />
+          <h3>Dr. Ananya Sharma</h3>
+          <div class="faculty-dept">Professor & HOD (CSE)</div>
+          <div class="faculty-details">
+            <p><strong>Qualification:</strong> Ph.D. (IIT Delhi)</p>
+            <p><strong>Specialization:</strong> Artificial Intelligence & Machine Learning</p>
+            <p><strong>Experience:</strong> 16 Years</p>
+          </div>
+          <a href="mailto:ananya.cse@abcit.edu.in" class="faculty-email"><i class="fa-solid fa-envelope"></i> ananya.cse@abcit.edu.in</a>
+        </div>
+
+        <!-- 4. IT HOD -->
+        <div class="faculty-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Prof. Rajesh Kumar" class="faculty-avatar" />
+          <h3>Prof. Rajesh Kumar</h3>
+          <div class="faculty-dept">Professor & HOD (IT)</div>
+          <div class="faculty-details">
+            <p><strong>Qualification:</strong> M.Tech, Ph.D. (Cybersecurity)</p>
+            <p><strong>Specialization:</strong> Cloud Computing & Network Security</p>
+            <p><strong>Experience:</strong> 15 Years</p>
+          </div>
+          <a href="mailto:rajesh.it@abcit.edu.in" class="faculty-email"><i class="fa-solid fa-envelope"></i> rajesh.it@abcit.edu.in</a>
+        </div>
+
+    </body>
+    </html>

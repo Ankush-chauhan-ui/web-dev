@@ -14,3 +14,27 @@ if (mobileMenuBtn && navLinks) {
     });
   });
 }
+
+function filterCourses(category) {
+  
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(function (btn) {
+    btn.classList.remove('active');
+  });
+
+  
+  if (event && event.target) {
+    event.target.classList.add('active');
+  }
+
+  const cards = document.querySelectorAll('.course-card');
+  cards.forEach(function (card) {
+    const cardCategory = card.getAttribute('data-category');
+
+    if (category === 'all' || cardCategory === category) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}

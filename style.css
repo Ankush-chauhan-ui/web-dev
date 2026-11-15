@@ -849,3 +849,158 @@ img {
   color: #991b1b;
   border: 1px solid #fecaca;
 }
+
+
+.main-footer {
+  background-color: #07263d;
+  color: #d0dbe5;
+  padding-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #1d70b8;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.affiliation-text {
+  margin-top: 12px;
+  color: #f59e0b !important;
+  font-weight: 600;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu li a {
+  color: #cbd5e1;
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+
+.footer-menu li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #041624;
+  padding: 16px 0;
+  font-size: 12px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom .credit {
+  color: #cbd5e1;
+}
+
+
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .college-branding {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li a {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .about-content,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-stats-row,
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-item {
+    margin: 2px 6px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .quick-stats-row,
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-grid,
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

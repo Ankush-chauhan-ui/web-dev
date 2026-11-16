@@ -1,29 +1,23 @@
 <?php
-// ============================================================
-// enquiries.php - view and manage enquiries (READ, UPDATE, DELETE)
-//
-// WARNING: this page has NO LOGIN yet. Anyone who knows the address can
-// see student names, emails and phone numbers. Use it only on your own
-// computer (localhost). Do not upload it to a public server until you add
-// login (password_hash + sessions - the next thing in your course).
-// ============================================================
+
+session_start();
+
+if (!isset($_SESSION['admin'])) {
+    header('Location: login.php');
+    exit;
+}
 
 require __DIR__ . '/includes/db.php';
 
-// Small helper: makes text safe to print inside HTML.
-// If a visitor typed <script>...</script> in the message box, this turns it
-// into harmless text instead of running it (XSS protection).
+
 function e($text): string
 {
     return htmlspecialchars((string) $text, ENT_QUOTES, 'UTF-8');
 }
 
-// ---------- UPDATE and DELETE ----------
-// The buttons below are small forms that send POST requests.
-// Changing data uses POST, not links (GET), so a crawler or a stray click
-// on a link can never delete something.
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $id     = (int) ($_POST['id'] ?? 0);      // (int) makes sure it is a number
+    $id     = (int) ($_POST['id'] ?? 0);      
     $action = $_POST['action'] ?? '';
 
     if ($id > 0) {
@@ -36,13 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Redirect so refreshing the page does not repeat the action
+    
     header('Location: enquiries.php');
     exit;
 }
 
-// ---------- READ ----------
-// Newest enquiries first
+
 $rows = $pdo->query(
     'SELECT id, name, email, phone, course, message, status, created_at
      FROM enquiries

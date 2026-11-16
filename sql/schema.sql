@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS enquiries (
   course     VARCHAR(60)  NOT NULL,
   message    TEXT         NULL,                                 
   status     ENUM('new', 'contacted') NOT NULL DEFAULT 'new',   
-  created_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP    -
+  created_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP    
 );

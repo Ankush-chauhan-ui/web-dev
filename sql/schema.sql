@@ -4,14 +4,14 @@ CREATE DATABASE IF NOT EXISTS technova
 
 USE technova;
 
--- One row = one admission enquiry sent from the website form
+
 CREATE TABLE IF NOT EXISTS enquiries (
-  id         INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,  -- unique number, MySQL fills it in
+  id         INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,  
   name       VARCHAR(100) NOT NULL,
   email      VARCHAR(150) NOT NULL,
-  phone      CHAR(10)     NOT NULL,                             -- exactly 10 digits
+  phone      CHAR(10)     NOT NULL,                             
   course     VARCHAR(60)  NOT NULL,
-  message    TEXT         NULL,                                 -- optional field
-  status     ENUM('new', 'contacted') NOT NULL DEFAULT 'new',   -- admissions team updates this
-  created_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP    -- MySQL fills in the time
+  message    TEXT         NULL,                                 
+  status     ENUM('new', 'contacted') NOT NULL DEFAULT 'new',   
+  created_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP    -
 );
